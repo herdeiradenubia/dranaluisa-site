@@ -1,4 +1,4 @@
-// Implementação do slider de depoimentos (exemplo com JavaScript puro)
+
 const depoimentosSlider = document.querySelector('.depoimentos-slider');
 const depoimentos = Array.from(document.querySelectorAll('.depoimento'));
 let currentIndex = 0;
@@ -14,8 +14,8 @@ function nextDepoimento() {
     showDepoimento(currentIndex);
 }
 
-setInterval(nextDepoimento, 5000); // Troca de depoimento a cada 5 segundos
-showDepoimento(currentIndex); // Mostrar o primeiro depoimento inicialmente
+setInterval(nextDepoimento, 5000); 
+showDepoimento(currentIndex); 
 
 window.onscroll = function() {mostrarBotao()};
 
@@ -38,11 +38,11 @@ function checkVisibility() {
     var sobreSection = document.getElementById('sobre');
     var rect = sobreSection.getBoundingClientRect();
 
-    // Calcula a posição da seção em relação ao topo da página
+   
     var positionTop = rect.top + window.pageYOffset;
     var windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-    // Verifica se a seção está visível na janela
+  
     if (positionTop < window.pageYOffset + windowHeight) {
       sobreSection.classList.add('show');
     }
@@ -50,5 +50,5 @@ function checkVisibility() {
 
   window.addEventListener('scroll', checkVisibility);
 
-  // Executa a verificação de visibilidade ao carregar a página
+  
   window.addEventListener('load', checkVisibility);
