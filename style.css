@@ -51,7 +51,7 @@ nav a {
 
 /* Seção Hero */
 #hero {
-    background-image: url(/teste/assets/2783.jpg); /* Substitua pela sua imagem */
+    background-image: url(assets/2783.jpg); 
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -84,17 +84,17 @@ nav a {
 #sobre {
     padding: 50px 0;
 }
-/* Efeito de surgir suave para a seção "sobre" */
+
 #sobre {
-    opacity: 0; /* Inicialmente, a seção fica invisível */
-    transform: translateY(50px); /* Movida para baixo */
+    opacity: 0; 
+    transform: translateY(50px); 
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; 
-    /* Define a transição com duração de 0.8 segundos */
+    
   }
   
 #sobre.show { 
-    opacity: 1; /* Se torna visível */
-    transform: translateY(0); /* Volta para a posição original */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 .sobre-content {
@@ -134,7 +134,7 @@ nav a {
 }
 
 .depoimentos-slider {
-    /* Estilos para o slider (implementar com JavaScript) */
+    
 }
 
 .depoimento {
@@ -181,7 +181,7 @@ textarea {
     border-radius: 10px;
 }
 
-/* Rodapé */
+
 footer {
     text-align: center;
     padding: 20px 0;
